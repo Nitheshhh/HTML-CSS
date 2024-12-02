@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Event</title>
+    <link rel="stylesheet" href="./nav.css">
+   
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Carnival</h1>
+</header>
+
+<div class="container">
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <h2>About the Event</h2>
+        <img src="https://via.placeholder.com/800x300?text=Enjoy+Games,+Music,+and+Food+Stalls!" alt="Carnival">
+        <p>
+            Join us for an unforgettable college carnival filled with excitement and fun! 
+            Experience a day packed with thrilling games, live music performances, and delicious food stalls. 
+            Don't miss this chance to create amazing memories with your friends and faculty!
+        </p>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp">
+        <h2>RSVP for the Carnival</h2>
+        <form action="submit_rsvp.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="reg_number">Registration Number:</label>
+            <input type="text" id="reg_number" name="reg_number" placeholder="Enter your registration number" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" placeholder="Enter your department" required>
+
+            <label for="year">Year:</label>
+            <select id="year" name="year">
+                <option value="1st">1st Year</option>
+                <option value="2nd">2nd Year</option>
+                <option value="3rd">3rd Year</option>
+                <option value="4th">4th Year</option>
+            </select>
+
+            <label for="consent">Will you attend?</label>
+            <select id="consent" name="consent">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    © 2024 College Carnival | All Rights Reserved
+</footer>
+
+</body>
+</html>
